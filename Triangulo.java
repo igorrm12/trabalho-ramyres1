@@ -1,18 +1,11 @@
 import java.util.Scanner;
 
-/**
- * Classe para calcular a área de um Triângulo
- * Fórmula: Área = (base × altura) / 2
- */
+
 public class Triangulo {
     private double base;
     private double altura;
 
-    /**
-     * Construtor do Triângulo
-     * @param base a base do triângulo
-     * @param altura a altura do triângulo
-     */
+ 
     public Triangulo(double base, double altura) {
         if (base <= 0 || altura <= 0) {
             throw new IllegalArgumentException("Base e altura devem ser valores positivos!");
@@ -21,10 +14,7 @@ public class Triangulo {
         this.altura = altura;
     }
 
-    /**
-     * Calcula a área do triângulo
-     * @return a área do triângulo
-     */
+
     public double calcularArea() {
         return (base * altura) / 2.0;
     }
