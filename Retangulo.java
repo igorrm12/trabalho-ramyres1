@@ -1,18 +1,9 @@
 import java.util.Scanner;
 
-/**
- * Classe para calcular a área de um Retângulo
- * Fórmula: Área = base × altura
- */
 public class Retangulo {
     private double base;
     private double altura;
 
-    /**
-     * Construtor do Retângulo
-     * @param base a base do retângulo
-     * @param altura a altura do retângulo
-     */
     public Retangulo(double base, double altura) {
         if (base <= 0 || altura <= 0) {
             throw new IllegalArgumentException("Base e altura devem ser valores positivos!");
@@ -21,18 +12,12 @@ public class Retangulo {
         this.altura = altura;
     }
 
-    /**
-     * Calcula a área do retângulo
-     * @return a área do retângulo
-     */
+
     public double calcularArea() {
         return base * altura;
     }
 
-    /**
-     * Calcula o perímetro do retângulo
-     * @return o perímetro do retângulo
-     */
+
     public double calcularPerimetro() {
         return 2 * (base + altura);
     }
